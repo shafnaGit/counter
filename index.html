@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bead Chain Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bead Chain Counter</h1>
+        <div class="bead" id="bead" onclick="incrementCount()">💎</div>
+        <div class="count-display" id="countDisplay">Count: 0</div>
+        <button onclick="resetCount()">Reset Count</button>
+        <button onclick="saveCount()">Save Count</button>
+        
+        <div class="save-section">
+            <input type="text" id="countName" placeholder="Enter name for this count">
+            <button onclick="viewSavedCounts()">View Saved Counts</button>
+        </div>
+
+        <ul id="savedCountsList"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
